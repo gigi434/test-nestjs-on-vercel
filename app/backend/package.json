@@ -21,7 +21,7 @@
     "prisma:migrate": "dotenv -e .env.development.lcoal -- npx prisma migrate dev",
     "prisma:studio": "dotenv -e .env.development.lcoal -- npx prisma studio",
     "prisma:generate": "dotenv -e .env.development.lcoal -- npx prisma generate",
-    "vercel-build": "prisma generate && nest build && node dist/main && prisma migrate deploy"  
+    "vercel-build": "prisma generate && nest build && prisma migrate deploy"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
